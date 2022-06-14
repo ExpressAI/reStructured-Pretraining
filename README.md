@@ -1,9 +1,7 @@
-# reStructured Pretraining
+# reStructured Pretraining (All are in the [Paper]())
 <p align="center">
 <img src="https://user-images.githubusercontent.com/59123869/173596999-f21cb853-d88f-4004-ad15-d6105f6e6cb8.png" width="400"/>
 </p>
-
-![image](https://user-images.githubusercontent.com/59123869/173600666-fbf999e6-f4d6-485f-9a8b-118970ad247e.png)
 
 
 #### Hypothesis of NLP Technique Evolution
