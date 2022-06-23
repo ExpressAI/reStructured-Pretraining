@@ -1,4 +1,4 @@
-# reStructured Pretraining (All are in the [Paper]())
+# reStructured Pretraining (All are in the [Paper](https://arxiv.org/pdf/2206.11147.pdf))
 <p align="center">
 <img src="https://user-images.githubusercontent.com/59123869/173596999-f21cb853-d88f-4004-ad15-d6105f6e6cb8.png" width="400"/>
 </p>
