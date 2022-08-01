@@ -5,10 +5,10 @@
 
 
 ### Hypothesis of NLP Technique Evolution
-the iteration of technology always moves along the direction that system developers can design a better and more general system by doing fewer things
+The iteration of technology always moves along the direction that system developers can design a better and more general system by doing fewer things.
 
 ### reStructure, Pre-training, Tuning Paradigm
-this paradigm regards model pre-training/tuning as a data storing/accessing process, and claims that a good storing mechanism should make expected data easily accessible
+This paradigm regards model pre-training/tuning as a data storing/accessing process, and claims that a good storing mechanism should make expected data easily accessible.
 
 
 
