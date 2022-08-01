@@ -15,7 +15,7 @@ This paradigm regards model pre-training/tuning as a data storing/accessing proc
 ## Download reStructured Signals?
 We provide collected signals through [DataLab](https://github.com/ExpressAI/DataLab). For efficiency, we only provide 50,000 samples at most for each signal type. If you want all the samples we collected, please fill this [form](). More specifically, we collected the following signals.
 
-| Mine | Signal | #Sample | Use in DataLab | Application | 
+| Mine | Signal | #Sample | Use in DataLab | Some Applications | 
 | --- | --- | --- | --- | --- |
 | [Rotten Tomatoes](https://www.rottentomatoes.com/) | (review, rating) | 5,311,109 | `load_dataset("rst", "rotten_tomatoes_sentiment")` | Sentiment classification | 
 | [Daily Mail](https://www.dailymail.co.uk/home/index.html) | (text, category) | 899,904 | `load_dataset("rst", "daily_mail_category")`| Topic classification | 
