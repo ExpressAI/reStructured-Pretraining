@@ -56,3 +56,12 @@ Under planning
 ## Submit your AI to Gaokao?
 See more [detail](https://github.com/ExpressAI/AI-Gaokao)
 
+## Cite
+```
+@article{yuan2022restructured,
+  title={reStructured Pre-training},
+  author={Yuan, Weizhe and Liu, Pengfei},
+  journal={arXiv preprint arXiv:2206.11147},
+  year={2022}
+}
+```
