@@ -13,7 +13,7 @@ This paradigm regards model pre-training/tuning as a data storing/accessing proc
 
 
 ## Download reStructured Signals?
-We provide collected signals through [DataLab](https://github.com/ExpressAI/DataLab). For efficiency, we only provide 50,000 samples at most for each signal type. If you want all the samples we collected, please fill this [form](). More specifically, we collected the following signals.
+We provide collected signals through [DataLab](https://github.com/ExpressAI/DataLab). For efficiency, we only provide 50,000 samples at most for each signal type. If you want all the samples we collected, please fill this [form](https://docs.google.com/forms/d/e/1FAIpQLSdPO50vSdfwoO3D7DQDVlupQnHgrXrwfF3ePE4X1H6BwgTn5g/viewform?usp=sf_link). More specifically, we collected the following signals.
 
 | Mine | Signal | #Sample | Use in DataLab | Some Applications | 
 | --- | --- | --- | --- | --- |
