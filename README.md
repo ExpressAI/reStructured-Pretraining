@@ -15,7 +15,6 @@ This paradigm regards model pre-training/tuning as a data storing/accessing proc
 ## Download reStructured Signals?
 This dataset is a precious treasure, containing a variety of naturally occurring signals. Any downstream task you can think of (e.g., the college entrance exam mentioned in the RST paper) can benefit from being pre-trained on some of our provided signals. We spent several months collecting the following 29 signal types, accounting for a total of 46,926,447 data samples. We hope this dataset will be a valuable asset for everyone in natural language processing research.
 
-<br>
 We provide collected signals through [DataLab](https://github.com/ExpressAI/DataLab). For efficiency, we only provide 50,000 samples at most for each signal type. If you want all the samples we collected, please fill this [form](https://docs.google.com/forms/d/e/1FAIpQLSdPO50vSdfwoO3D7DQDVlupQnHgrXrwfF3ePE4X1H6BwgTn5g/viewform?usp=sf_link). More specifically, we collected the following signals.
 
 | Mine | Signal | #Sample | Use in DataLab | Some Applications | 
