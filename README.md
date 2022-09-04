@@ -3,6 +3,10 @@
 <img src="https://user-images.githubusercontent.com/59123869/173596999-f21cb853-d88f-4004-ad15-d6105f6e6cb8.png" width="400"/>
 </p>
 
+## Update
+* 2022-09-04: release all models at [Huggingface](https://huggingface.co/XLab)
+* 2022-08-15: release all data at [DataLab](https://github.com/ExpressAI/reStructured-Pretraining#download-restructured-signals)
+
 
 ### Hypothesis of NLP Technique Evolution
 The iteration of technology always moves along the direction that system developers can design a better and more general system by doing fewer things.
@@ -53,6 +57,7 @@ We provide collected signals through [DataLab](https://github.com/ExpressAI/Data
 
 
 ## Download reStructured Models?
+Check all models at [Huggingface](https://huggingface.co/XLab)
 ### Model Description
 We release all models introduced in our [paper](https://arxiv.org/pdf/2206.11147.pdf), covering 13 different application scenarios. Each model contains 11 billion parameters.
 
