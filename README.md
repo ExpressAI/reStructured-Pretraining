@@ -21,6 +21,15 @@ This dataset is a precious treasure, containing a variety of naturally occurring
 
 We provide collected signals through [DataLab](https://github.com/ExpressAI/DataLab). For efficiency, we only provide 50,000 samples at most for each signal type. If you want all the samples we collected, please fill this [form](https://docs.google.com/forms/d/e/1FAIpQLSdPO50vSdfwoO3D7DQDVlupQnHgrXrwfF3ePE4X1H6BwgTn5g/viewform?usp=sf_link). More specifically, we collected the following signals.
 
+One example:
+
+```python
+# pip install datalabs
+from datalabs import load_dataset
+rst = load_dataset("rst", "wikipedia_entities")
+
+```
+
 ###### We will be happy :smiley: to know if the resource is helpful for your work, and please cite our [work](https://github.com/ExpressAI/reStructured-Pretraining/blob/main/README.md#Bib) :blush:
 
 | Mine | Signal | #Sample | Use in DataLab | Some Applications | 
