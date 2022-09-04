@@ -53,7 +53,38 @@ We provide collected signals through [DataLab](https://github.com/ExpressAI/Data
 
 
 ## Download reStructured Models?
-Under planning
+### Model Description
+We release all models introduced in our [paper](https://arxiv.org/pdf/2206.11147.pdf), covering 13 different application scenarios. Each model contains 11 billion parameters.
+
+| Model      | Description | Recommended Application
+| ----------- | ----------- |----------- |
+| rst-all-11b                     | Trained with all the signals below except signals that are used to train Gaokao models        | All applications below （specialized models are recommended first if high performance is preferred） |
+| rst-fact-retrieval-11b              | Trained with the following signals: WordNet meaning, WordNet part-of-speech, WordNet synonym, WordNet antonym, wikiHow category hierarchy, Wikidata relation, Wikidata entity typing, Paperswithcode entity typing       | Knowledge intensive tasks, information extraction tasks,factual checker  |
+| rst-summarization-11b               | Trained with the following signals: DailyMail summary, Paperswithcode summary, arXiv summary, wikiHow summary    | Summarization or other general generation tasks, meta-evaluation (e.g., BARTScore)  |
+| rst-temporal-reasoning-11b          | Trained with the following signals: DailyMail temporal information, wikiHow procedure       |  Temporal reasoning, relation extraction, event-based extraction |
+| rst-information-extraction-11b      | Trained with the following signals: Paperswithcode entity, Paperswithcode entity typing, Wikidata entity typing, Wikidata relation, Wikipedia entity       |  Named entity recognition, relation extraction and other general IE tasks in the news, scientific or other domains|
+| rst-intent-detection-11b            | Trained with the following signals: wikiHow goal-step relation       | Intent prediction, event prediction  |
+| rst-topic-classification-11b        | Trained with the following signals: DailyMail category, arXiv category, wikiHow text category, Wikipedia section title | general text classification   |
+| rst-word-sense-disambiguation-11b   | Trained with the following signals: WordNet meaning, WordNet part-of-speech, WordNet synonym, WordNet antonym   | Word sense disambiguation, part-of-speech tagging, general IE tasks, common sense reasoning  |
+| rst-natural-language-inference-11b  | Trained with the following signals: ConTRoL dataset, DREAM dataset, LogiQA dataset, RACE & RACE-C dataset, ReClor dataset, DailyMail temporal information       | Natural language inference, multiple-choice question answering, reasoning  |
+| rst-sentiment-classification-11b    | Trained with the following signals: Rotten Tomatoes sentiment, Wikipedia sentiment | Sentiment classification, emotion classification  |
+| rst-gaokao-rc-11b                   | Trained with multiple-choice QA datasets that are used to train the [T0pp](https://huggingface.co/bigscience/T0pp) model       | General multiple-choice question answering|
+| rst-gaokao-cloze-11b                | Trained with manually crafted cloze datasets    |  General cloze filling|
+| **rst-gaokao-writing-11b**              | **Trained with example essays from past Gaokao-English exams and grammar error correction signals**       | **Essay writing, story generation, grammar error correction and other text generation tasks**  |
+
+
+
+### Have a try?
+```python
+from transformers import AutoTokenizer, AutoModelForSeq2SeqLM
+
+tokenizer = AutoTokenizer.from_pretrained("XLab/rst-all-11b")
+model = AutoModelForSeq2SeqLM.from_pretrained("XLab/rst-all-11b")
+
+inputs = tokenizer.encode("TEXT: this is the best cast iron skillet you will ever buy. QUERY: Is this review \"positive\" or \"negative\"", return_tensors="pt")
+outputs = model.generate(inputs)
+print(tokenizer.decode(outputs[0], skip_special_tokens=True, clean_up_tokenization_spaces=True))
+```
 
 ## Submit your AI to Gaokao?
 See more [detail](https://github.com/ExpressAI/AI-Gaokao)
